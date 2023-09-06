@@ -31,8 +31,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/notes', (request, response) => {
-  response.end(JSON.stringify(notes))
-  // response.json(notes)
+  response.json(notes)
 })
 
 app.post('/api/notes', (request, response) => {
